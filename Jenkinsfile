@@ -4,6 +4,7 @@ pipleline {
   stages {
     stage('build') {
       steps {
+        echo 'Checking Maven Version...'
         sh 'mvn --version'
       }
     }
